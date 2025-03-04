@@ -2,7 +2,7 @@ import { MessageBubble, withTaskContext } from "@twilio/flex-ui";
 
 type MessageBubbleWrapperProps = React.ComponentProps<typeof MessageBubble>;
 
-const MessageWrapper = (props: Partial<MessageBubbleWrapperProps>) => {
+const MessageBubbleWrapper = (props: Partial<MessageBubbleWrapperProps>) => {
   let modifiedAuthor = props.message?.authorName;
   if (modifiedAuthor && modifiedAuthor.length > 4) {
     modifiedAuthor = modifiedAuthor.slice(0, -4) + "•••••";
@@ -56,4 +56,4 @@ const MessageWrapper = (props: Partial<MessageBubbleWrapperProps>) => {
   );
 };
 
-export default withTaskContext(MessageWrapper);
+export default withTaskContext(MessageBubbleWrapper);
