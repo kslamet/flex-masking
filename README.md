@@ -1,6 +1,6 @@
-# Twilio Flex - User Obscure
+# Twilio Flex - Masking
 
-This plugin obscures the from user address in chat messages
+This plugin masks the from user address in chat messages
 
 
 ## Example

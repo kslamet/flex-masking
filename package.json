@@ -1,6 +1,6 @@
 {
-  "name": "flex-obscure-details",
-  "version": "0.0.0",
+  "name": "flex-masking",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "postinstall": "flex-plugin pre-script-check"

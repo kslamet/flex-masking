@@ -1,5 +1,5 @@
 import * as FlexPlugin from '@twilio/flex-plugin';
 
-import FlexObscureDetailsPlugin from './FlexObscureDetailsPlugin';
+import FlexMaskingPlugin from './FlexMaskingPlugin';
 
-FlexPlugin.loadPlugin(FlexObscureDetailsPlugin);
+FlexPlugin.loadPlugin(FlexMaskingPlugin);

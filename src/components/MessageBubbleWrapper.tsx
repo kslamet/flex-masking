@@ -1,4 +1,5 @@
 import { MessageBubble, withTaskContext } from "@twilio/flex-ui";
+import InlineMedia from "./InlineMedia";
 
 type MessageBubbleWrapperProps = React.ComponentProps<typeof MessageBubble>;
 
@@ -51,6 +52,7 @@ const MessageBubbleWrapper = (props: Partial<MessageBubbleWrapperProps>) => {
       </div>
       <div className="Twilio-MessageBubble-Body">
         {props.message?.source.body}
+        {props.message?.source.attachedMedia && <InlineMedia message={props.message} />}
       </div>
     </div>
   );
